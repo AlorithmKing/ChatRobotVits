@@ -1,0 +1,168 @@
+[
+  {
+    "type": "小雨",
+    "img_path":"images/res/type/XiaoYu.png"
+
+  },
+  {
+   "type": "多云",
+    "img_path": "images/res/type/DuoYun.png"
+  },
+  {
+    "type": "阴",
+    "img_path": "images/res/type/Yin.png"
+
+  },
+  {
+    "type": "晴",
+    "img_path": "images/res/type/Qing.png"
+  },
+  {
+    "type": "雨夹雪",
+    "img_path": "images/res/type/YuJiaXue.png"
+  },
+  {
+    "type": "阵雨",
+    "img_path": "images/res/type/ZhenYu.png"
+  },
+  {
+    "type": "雷阵雨",
+    "img_path": "images/res/type/LeiZhenYu.png"
+  },
+  {
+    "type": "雷阵雨伴有冰雹",
+    "img_path": "images/res/type/LeiZhenYuBingBao.png"
+  },
+  {
+    "type": "雾",
+    "img_path": "images/res/type/Wu.png"
+  },
+  {
+    "type": "冻雨",
+    "img_path": "images/res/type/DongYu.png"
+  },
+  {
+    "type": "沙尘暴",
+    "img_path": "images/res/type/Shachenbao.png"
+  },
+  {
+    "type": "小雪",
+    "img_path": "images/res/type/XiaoXue.png"
+  },
+  {
+    "type": "中雪",
+    "img_path": "images/res/type/ZhongXue.png"
+  },
+  {
+    "type": "大雪",
+    "img_path": "images/res/type/DaXue.png"
+  },
+  {
+    "type": "暴雪",
+    "img_path": "images/res/type/BaoXue.png"
+  },
+  {
+    "type": "浮尘",
+    "img_path": "images/res/type/FuChen.png"
+  },
+  {
+    "type": "扬沙",
+    "img_path": "images/res/type/YangSha.png"
+  },
+  {
+    "type": "强沙尘暴",
+    "img_path": "images/res/type/QiangShachenbao.png"
+  },
+  {
+    "type": "霾",
+    "img_path": "images/res/type/Mai.png"
+  },
+  {
+    "type": "雨",
+    "img_path": "images/res/type/Yu.png"
+  },
+  {
+    "type": "雪",
+    "img_path": "images/res/type/Xue.png"
+  },
+  {
+    "type": "风",
+    "img_path": "images/res/type/Feng.png"
+  },
+  {
+    "type": "雾霾雾霾",
+    "img_path": "images/res/type/WuMai.png"
+  },
+  {
+    "type": "中雨",
+    "img_path": "images/res/type/ZhongYu.png"
+  },
+  {
+    "type": "大雨",
+    "img_path": "images/res/type/DaYu.png"
+  },
+  {
+    "type": "暴雨",
+    "img_path": "images/res/type/BaoYu.png"
+  },
+  {
+    "type": "大暴雨",
+    "img_path": "images/res/type/DaBaoYu.png"
+  },
+  {
+    "type": "特大暴雨",
+    "img_path": "images/res/type/TeDaBaoYu.png"
+  },
+  {
+    "type": "阵雪",
+    "img_path": "images/res/type/ZhenXue.png"
+  },
+  {
+    "type": "阵雨夹雪",
+    "img_path": "images/res/type/ZhenYuJiaXue.png"
+  },
+  {
+    "type": "小雨-中雨",
+    "img_path": "images/res/type/XiaoYuZhongYu.png"
+  },
+  {
+    "type": "中雨-大雨",
+    "img_path": "images/res/type/ZhongYuDaYu.png"
+  },
+  {
+    "type": "大雨-暴雨",
+    "img_path": "images/res/type/DaYuBaoYu.png"
+  },
+  {
+    "type": "暴雨-大暴雨",
+    "img_path": "images/res/type/BaoYuDaBaoYu.png"
+  },
+  {
+    "type": "大暴雨-特大暴雨",
+    "img_path": "images/res/type/DaBaoYuTeDaBaoYu.png"
+  },
+    {
+        "type": "小雪-中雪",
+        "img_path": "images/res/type/XiaoXueZhongXue.png"
+    },
+    {
+        "type": "中雪-大雪",
+        "img_path": "images/res/type/ZhongXueDaXue.png"
+    },
+    {
+        "type": "大雪-暴雪",
+        "img_path": "images/res/type/DaXueBaoXue.png"
+    },
+    {
+        "type": "浮尘",
+        "img_path": "images/res/type/FuChen.png"
+    },
+    {
+        "type": "扬沙",
+        "img_path": "images/res/type/YangSha.png"
+    },
+    {
+        "type": "强沙尘暴",
+        "img_path": "images/res/type/QiangShachenbao.png"
+    }
+]
