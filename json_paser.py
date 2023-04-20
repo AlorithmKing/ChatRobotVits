@@ -5,10 +5,6 @@ from lxml import html
 
 citymap = {}
 
-week_container = []
-data_container = []
-weather_container = []
-
 def init_citymap():
     file_path = 'citycode.json'
     json_data = json.load(open(file_path, 'r', encoding='utf-8'))
@@ -49,20 +45,19 @@ def get_weather_info(cityname):
         data_dict = json.loads(json_dict)
     return data_dict
 
-def init_container():
-    data = get_weather_info('上海')
-    forecast_data = data['data']['forecast']
-    for i, day in enumerate(forecast_data):
-        if i == 6:
-            break
-        week_container.append(day["week"])  # 日期
-        date = day['ymd']
-        date = date.split('-')[1] + '-' + date.split('-')[2]
-        data_container.append(date)  # 星期
 
-        weather_container.append(day["type"])  # 天气
+
+def load_weather_icon(type):
+    json_data = json.load(open('weathericon.json', 'r', encoding='utf-8'))
+    if not json_data:
+        print('读取文件失败')
+        return False
+    for i in range(len(json_data)):
+        if json_data[i]['type'] == type:
+            return json_data[i]['img_path']
 
 if __name__ == '__main__':
 
-    init_container()
-    print(citymap)
+   json_data = get_weather_info('北京')
+
+   print(json_data)

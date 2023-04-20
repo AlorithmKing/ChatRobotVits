@@ -1782,7 +1782,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>1</number>
+                      <number>2</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="styleSheet">
@@ -2395,7 +2395,7 @@ color: rgb(240, 240, 240);</string>
                                 </property>
                                 <layout class="QGridLayout" name="gridLayout_5">
                                  <item row="0" column="0">
-                                  <widget class="QLabel" name="label_20">
+                                  <widget class="QLabel" name="p1">
                                    <property name="text">
                                     <string/>
                                    </property>
@@ -2405,7 +2405,7 @@ color: rgb(240, 240, 240);</string>
                                   </widget>
                                  </item>
                                  <item row="0" column="1">
-                                  <widget class="QLabel" name="label_22">
+                                  <widget class="QLabel" name="p2">
                                    <property name="text">
                                     <string/>
                                    </property>
@@ -2415,7 +2415,7 @@ color: rgb(240, 240, 240);</string>
                                   </widget>
                                  </item>
                                  <item row="0" column="2">
-                                  <widget class="QLabel" name="label_24">
+                                  <widget class="QLabel" name="p3">
                                    <property name="text">
                                     <string/>
                                    </property>
@@ -2425,7 +2425,7 @@ color: rgb(240, 240, 240);</string>
                                   </widget>
                                  </item>
                                  <item row="0" column="3">
-                                  <widget class="QLabel" name="label_26">
+                                  <widget class="QLabel" name="p4">
                                    <property name="text">
                                     <string/>
                                    </property>
@@ -2435,7 +2435,7 @@ color: rgb(240, 240, 240);</string>
                                   </widget>
                                  </item>
                                  <item row="0" column="4">
-                                  <widget class="QLabel" name="label_28">
+                                  <widget class="QLabel" name="p5">
                                    <property name="text">
                                     <string/>
                                    </property>
@@ -2445,7 +2445,7 @@ color: rgb(240, 240, 240);</string>
                                   </widget>
                                  </item>
                                  <item row="0" column="5">
-                                  <widget class="QLabel" name="label_30">
+                                  <widget class="QLabel" name="p6">
                                    <property name="text">
                                     <string/>
                                    </property>
@@ -3056,7 +3056,7 @@ color: rgb(240, 240, 240);</string>
      </widget>
     </item>
    </layout>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>

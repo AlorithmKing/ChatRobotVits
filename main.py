@@ -130,12 +130,6 @@ class MainWindow(QMainWindow):
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
-        # SHOW WIDGETS PAGE
-        if btnName == "btn_widgets":
-            widgets.stackedWidget.setCurrentWidget(widgets.widgets)
-            UIFunctions.resetStyle(self, btnName)
-            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
-
         # SHOW WEATHER PAGE
         if btnName == "btn_weather":
             widgets.stackedWidget.setCurrentWidget(widgets.weather)
@@ -149,9 +143,6 @@ class MainWindow(QMainWindow):
             UIFunctions.resetStyle(self, btnName)  # RESET ANOTHERS BUTTONS SELECTED
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))  # SELECT MENU
 
-        if btnName == "btn_save":
-            print("Save BTN clicked!")
-
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')
 
@@ -161,10 +152,13 @@ class MainWindow(QMainWindow):
 
         self.searchfunc.start()
         self.searchfunc.finished.connect(self.searchfunc_finished)
-        # print("Search BTN clicked!")
 
     def searchfunc_finished(self):
+
+        name = self.ui.line_search.text()
+
         self.ui.line_search.clear()
+        self.WeatherPageInit(name)
 
     def WeatherPageInit(self, current_city='上海'):
         json_dict = get_weather_info(current_city)
@@ -173,22 +167,26 @@ class MainWindow(QMainWindow):
         current_pm25 = json_dict['data']['pm25']
         current_wind_direction = json_dict['data']['forecast'][0]['fx']
         current_date = json_dict['time'].split(' ')[0]
-        self.ui.label_pm25.setText(f"{current_pm25}")
-        self.ui.label_temp.setText(f"{current_tempeture}")
-        self.ui.label_humidity.setText(f"{current_humidity}")
-        self.ui.label_wind.setText(f"{current_wind_direction}")
-        self.ui.label_city.setText(current_city)
-        self.ui.dateinfo.setText(f"{current_date}")
+
+        self.ui.label_pm25.setText(f"{current_pm25}")  # pm2.5
+        self.ui.label_temp.setText(f"{current_tempeture}")  # temp
+        self.ui.label_humidity.setText(f"{current_humidity}")  # humi
+        self.ui.label_wind.setText(f"{current_wind_direction}")  # wind dir
+        self.ui.label_city.setText(current_city)  # city
+        self.ui.dateinfo.setText(f"{current_date}")  # today date
+
         ui_date_container = [self.ui.date1, self.ui.date2, self.ui.date3, self.ui.date4, self.ui.date5, self.ui.date6]
         ui_day_container = [self.ui.day1, self.ui.day2, self.ui.day3, self.ui.day4, self.ui.day5, self.ui.day6]
         ui_w_container = [self.ui.w1, self.ui.w2, self.ui.w3, self.ui.w4, self.ui.w5, self.ui.w6]
-        # ui_p_container=[self.ui.p1,self.ui.p2,self.ui.p3,self.ui.p4,self.ui.p5,self.ui.p6]
+        ui_p_container = [self.ui.p1, self.ui.p2, self.ui.p3, self.ui.p4, self.ui.p5, self.ui.p6]
         for i in range(6):
             data = json_dict['data']['forecast'][i]['ymd'].split('-')[1] + '/' + \
                    json_dict['data']['forecast'][i]['ymd'].split('-')[2]
             ui_date_container[i].setText(data)
             ui_day_container[i].setText(json_dict['data']['forecast'][i]['week'])
             ui_w_container[i].setText(json_dict['data']['forecast'][i]['type'])
+            url = load_weather_icon(json_dict['data']['forecast'][i]['type'])
+            ui_p_container[i].setPixmap(QPixmap(url))
 
     # RESIZE EVENTS
     # ///////////////////////////////////////////////////////////////

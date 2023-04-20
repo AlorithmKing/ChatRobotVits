@@ -4,6 +4,8 @@ from PyQt6.QtCore import pyqtSignal
 from PySide6.QtCore import QThread
 
 
+
+
 class SearchThread(QThread):
     finished = pyqtSignal()
 

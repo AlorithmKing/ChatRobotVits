@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainpEfTMB.ui'
+## Form generated from reading UI file 'mainEAEUyU.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.0
 ##
@@ -555,10 +555,10 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "")
-        self.widget = QWidget(self.styleSheet)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(0, 0, 2, 2))
-        self.verticalLayout_31 = QVBoxLayout(self.widget)
+        self.layoutWidget = QWidget(self.styleSheet)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(0, 0, 2, 2))
+        self.verticalLayout_31 = QVBoxLayout(self.layoutWidget)
         self.verticalLayout_31.setObjectName(u"verticalLayout_31")
         self.verticalLayout_31.setContentsMargins(0, 0, 0, 0)
         self.appMargins = QVBoxLayout(self.styleSheet)
@@ -1082,14 +1082,14 @@ class Ui_MainWindow(object):
         self.weather.setStyleSheet(u"")
         self.verticalLayout_21 = QVBoxLayout(self.weather)
         self.verticalLayout_21.setObjectName(u"verticalLayout_21")
-        self.widget1 = QWidget(self.weather)
-        self.widget1.setObjectName(u"widget1")
-        self.widget1.setStyleSheet(u"QWidget#widget{\n"
+        self.widget = QWidget(self.weather)
+        self.widget.setObjectName(u"widget")
+        self.widget.setStyleSheet(u"QWidget#widget{\n"
 "	border-image:url(:/res/images/res/background.png);\n"
 "}")
-        self.verticalLayout_27 = QVBoxLayout(self.widget1)
+        self.verticalLayout_27 = QVBoxLayout(self.widget)
         self.verticalLayout_27.setObjectName(u"verticalLayout_27")
-        self.widget_3 = QWidget(self.widget1)
+        self.widget_3 = QWidget(self.widget)
         self.widget_3.setObjectName(u"widget_3")
         self.widget_3.setStyleSheet(u"background-image: url(:/res/images/res/background.png);")
         self.btn_search = QPushButton(self.widget_3)
@@ -1123,7 +1123,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
         self.verticalLayout_25 = QVBoxLayout()
         self.verticalLayout_25.setObjectName(u"verticalLayout_25")
-        self.widget_8 = QWidget(self.widget1)
+        self.widget_8 = QWidget(self.widget)
         self.widget_8.setObjectName(u"widget_8")
         self.gridLayout_7 = QGridLayout(self.widget_8)
         self.gridLayout_7.setObjectName(u"gridLayout_7")
@@ -1162,7 +1162,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_25.addWidget(self.widget_8)
 
-        self.widget_9 = QWidget(self.widget1)
+        self.widget_9 = QWidget(self.widget)
         self.widget_9.setObjectName(u"widget_9")
         self.verticalLayout_30 = QVBoxLayout(self.widget_9)
         self.verticalLayout_30.setObjectName(u"verticalLayout_30")
@@ -1306,7 +1306,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_23 = QVBoxLayout()
         self.verticalLayout_23.setObjectName(u"verticalLayout_23")
-        self.widget_7 = QWidget(self.widget1)
+        self.widget_7 = QWidget(self.widget)
         self.widget_7.setObjectName(u"widget_7")
         self.widget_7.setStyleSheet(u"QLabel {\n"
 "	background-color: rgba(0, 200, 200, 200);\n"
@@ -1395,7 +1395,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_23.addWidget(self.widget_7)
 
-        self.widget_6 = QWidget(self.widget1)
+        self.widget_6 = QWidget(self.widget)
         self.widget_6.setObjectName(u"widget_6")
         self.widget_6.setStyleSheet(u"QLabel {\n"
 "	background-color: rgba(60, 60, 60, 100);\n"
@@ -1403,41 +1403,41 @@ class Ui_MainWindow(object):
 "}")
         self.gridLayout_5 = QGridLayout(self.widget_6)
         self.gridLayout_5.setObjectName(u"gridLayout_5")
-        self.label_20 = QLabel(self.widget_6)
-        self.label_20.setObjectName(u"label_20")
-        self.label_20.setPixmap(QPixmap(u":/res/images/res/type/ZhenXue.png"))
+        self.p1 = QLabel(self.widget_6)
+        self.p1.setObjectName(u"p1")
+        self.p1.setPixmap(QPixmap(u":/res/images/res/type/ZhenXue.png"))
 
-        self.gridLayout_5.addWidget(self.label_20, 0, 0, 1, 1)
+        self.gridLayout_5.addWidget(self.p1, 0, 0, 1, 1)
 
-        self.label_22 = QLabel(self.widget_6)
-        self.label_22.setObjectName(u"label_22")
-        self.label_22.setPixmap(QPixmap(u":/res/images/res/type/XiaoXue.png"))
+        self.p2 = QLabel(self.widget_6)
+        self.p2.setObjectName(u"p2")
+        self.p2.setPixmap(QPixmap(u":/res/images/res/type/XiaoXue.png"))
 
-        self.gridLayout_5.addWidget(self.label_22, 0, 1, 1, 1)
+        self.gridLayout_5.addWidget(self.p2, 0, 1, 1, 1)
 
-        self.label_24 = QLabel(self.widget_6)
-        self.label_24.setObjectName(u"label_24")
-        self.label_24.setPixmap(QPixmap(u":/res/images/res/type/DuoYun.png"))
+        self.p3 = QLabel(self.widget_6)
+        self.p3.setObjectName(u"p3")
+        self.p3.setPixmap(QPixmap(u":/res/images/res/type/DuoYun.png"))
 
-        self.gridLayout_5.addWidget(self.label_24, 0, 2, 1, 1)
+        self.gridLayout_5.addWidget(self.p3, 0, 2, 1, 1)
 
-        self.label_26 = QLabel(self.widget_6)
-        self.label_26.setObjectName(u"label_26")
-        self.label_26.setPixmap(QPixmap(u":/res/images/res/type/DuoYun.png"))
+        self.p4 = QLabel(self.widget_6)
+        self.p4.setObjectName(u"p4")
+        self.p4.setPixmap(QPixmap(u":/res/images/res/type/DuoYun.png"))
 
-        self.gridLayout_5.addWidget(self.label_26, 0, 3, 1, 1)
+        self.gridLayout_5.addWidget(self.p4, 0, 3, 1, 1)
 
-        self.label_28 = QLabel(self.widget_6)
-        self.label_28.setObjectName(u"label_28")
-        self.label_28.setPixmap(QPixmap(u":/res/images/res/type/ZhongDaoDaXue.png"))
+        self.p5 = QLabel(self.widget_6)
+        self.p5.setObjectName(u"p5")
+        self.p5.setPixmap(QPixmap(u":/res/images/res/type/ZhongDaoDaXue.png"))
 
-        self.gridLayout_5.addWidget(self.label_28, 0, 4, 1, 1)
+        self.gridLayout_5.addWidget(self.p5, 0, 4, 1, 1)
 
-        self.label_30 = QLabel(self.widget_6)
-        self.label_30.setObjectName(u"label_30")
-        self.label_30.setPixmap(QPixmap(u":/res/images/res/type/DaBaoYu.png"))
+        self.p6 = QLabel(self.widget_6)
+        self.p6.setObjectName(u"p6")
+        self.p6.setPixmap(QPixmap(u":/res/images/res/type/DaBaoYu.png"))
 
-        self.gridLayout_5.addWidget(self.label_30, 0, 5, 1, 1)
+        self.gridLayout_5.addWidget(self.p6, 0, 5, 1, 1)
 
         self.w1 = QLabel(self.widget_6)
         self.w1.setObjectName(u"w1")
@@ -1484,7 +1484,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_23.addWidget(self.widget_6)
 
-        self.widget_5 = QWidget(self.widget1)
+        self.widget_5 = QWidget(self.widget)
         self.widget_5.setObjectName(u"widget_5")
         self.horizontalLayout_6 = QHBoxLayout(self.widget_5)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
@@ -1534,7 +1534,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_23.addWidget(self.widget_5)
 
-        self.widget_4 = QWidget(self.widget1)
+        self.widget_4 = QWidget(self.widget)
         self.widget_4.setObjectName(u"widget_4")
         self.verticalLayout_22 = QVBoxLayout(self.widget_4)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
@@ -1551,7 +1551,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_23.addWidget(self.widget_4)
 
-        self.widget_2 = QWidget(self.widget1)
+        self.widget_2 = QWidget(self.widget)
         self.widget_2.setObjectName(u"widget_2")
         self.widget_2.setStyleSheet(u"QLabel {\n"
 "	background-color: rgba(0, 200, 200, 200);\n"
@@ -1632,7 +1632,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_27.addLayout(self.horizontalLayout_10)
 
 
-        self.verticalLayout_21.addWidget(self.widget1)
+        self.verticalLayout_21.addWidget(self.widget)
 
         self.stackedWidget.addWidget(self.weather)
 
@@ -1776,7 +1776,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1872,12 +1872,12 @@ class Ui_MainWindow(object):
         self.date4.setText(QCoreApplication.translate("MainWindow", u"01/04", None))
         self.date5.setText(QCoreApplication.translate("MainWindow", u"01/05", None))
         self.date6.setText(QCoreApplication.translate("MainWindow", u"01/06", None))
-        self.label_20.setText("")
-        self.label_22.setText("")
-        self.label_24.setText("")
-        self.label_26.setText("")
-        self.label_28.setText("")
-        self.label_30.setText("")
+        self.p1.setText("")
+        self.p2.setText("")
+        self.p3.setText("")
+        self.p4.setText("")
+        self.p5.setText("")
+        self.p6.setText("")
         self.w1.setText(QCoreApplication.translate("MainWindow", u"\u6674", None))
         self.w2.setText(QCoreApplication.translate("MainWindow", u"\u5c0f\u96e8", None))
         self.w3.setText(QCoreApplication.translate("MainWindow", u"\u591a\u4e91", None))
